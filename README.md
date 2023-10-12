@@ -7,8 +7,11 @@ Este é uma API Rest CRUD (Create, Read, Update, Delete) em Java usando o framew
 Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas:
 
 - **Java Development Kit (JDK)** 8 ou superior
+  
 - **Maven**
+  
 -  Um banco de dados da sua preferência
+
 - Uma IDE (Ambiente de Desenvolvimento Integrado) ou um editor de código: Você pode escolher entre várias opções populares, como:
   - [Eclipse](https://www.eclipse.org/downloads/): Uma IDE poderosa e amplamente utilizada para desenvolvimento Java.
   - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/): Uma IDE popular com uma gama de recursos avançados.
