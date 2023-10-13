@@ -1,6 +1,6 @@
 # Projeto CRUD full stack em Java com Spring Rest + Bootstrap
 
-Este é uma API Rest CRUD (Create, Read, Update, Delete) em Java usando o framework Spring junto com front end com boostrap. Este aplicativo permite gerenciar uma coleção de itens, como produtos, clientes, tarefas, etc., realizando operações básicas de CRUD.
+Este é uma API Rest CRUD (Create, Read, Update, Delete) em Java usando o framework Spring junto com front end com Bootstrap. Este aplicativo permite gerenciar uma coleção de itens, como produtos, clientes, tarefas, etc., realizando operações básicas de CRUD.
 
 ## Pré-requisitos
 
