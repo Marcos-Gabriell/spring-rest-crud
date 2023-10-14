@@ -47,7 +47,9 @@ public class GreetingsController {
         return new ResponseEntity<List<Usuario>>(usuarios, HttpStatus.OK);
     }
 
-    public ResponseEntity<Usuario>
+    public ResponseEntity<Usuario> salvar() {
+
+    }
 
 
 }
