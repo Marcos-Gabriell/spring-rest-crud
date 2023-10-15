@@ -56,5 +56,14 @@ public class GreetingsController {
       return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
     }
 
+    @PostMapping(value = "salvar")
+    @ResponseBody
+    public ResponseEntity<Usuario> salvar(@RequestBody Usuario usuario) {
+
+        Usuario user =  usuarioRepository.save(usuario);
+
+        return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
+    }
+
 
 }
