@@ -62,7 +62,8 @@ public class GreetingsController {
 
         Usuario user =  usuarioRepository.saveAndFlush(usuario);
 
-        return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
+        return new ResponseEntity<Usuario>(user, HttpStatus.OK);
+
     }
 
 
