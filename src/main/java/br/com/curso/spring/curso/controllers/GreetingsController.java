@@ -56,6 +56,15 @@ public class GreetingsController {
       return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
     }
 
+    @PutMapping(value = "atualizar")
+    @ResponseBody
+    public ResponseEntity<Usuario> atualizar(@RequestBody Usuario usuario) {
+
+        Usuario user =  usuarioRepository.saveAndFlush(usuario);
+
+        return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
+    }
+
 
     @DeleteMapping(value = "delete")
     @ResponseBody
