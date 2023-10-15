@@ -58,8 +58,11 @@ public class GreetingsController {
 
     @PutMapping(value = "atualizar")
     @ResponseBody
-    public ResponseEntity<Usuario> atualizar(@RequestBody Usuario usuario) {
+    public ResponseEntity<?> atualizar(@RequestBody Usuario usuario) {
 
+        if(usuario.getId() == null) {
+            return new ResponseEntity<String>("Id não foi informado", HttpStatus.OK);
+        }
         Usuario user =  usuarioRepository.saveAndFlush(usuario);
 
         return new ResponseEntity<Usuario>(user, HttpStatus.OK);
