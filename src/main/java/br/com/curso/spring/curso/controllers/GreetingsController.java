@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * A sample greetings controller to return greeting text
@@ -90,7 +91,7 @@ public class GreetingsController {
     @ResponseBody
     public ResponseEntity<List<Usuario>> buscarPorNome(@RequestParam(name = "name") String name){
 
-        List<Usuario> usuario = usuarioRepository.buscarPorNome(name.trim());
+        List<Usuario> usuario = usuarioRepository.buscarPorNome(name.trim().toUpperCase());
 
         return new ResponseEntity<List<Usuario>>(usuario, HttpStatus.OK);
     }
