@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-    @Query(valeu = "select u from Usuario u where u.nome like")
+    @Query(valeu = "select u from Usuario u where u.nome like %?1%")
     List<Usuario> bsucarPorNome(String nome);
 }
