@@ -51,9 +51,9 @@ public class GreetingsController {
     @ResponseBody
     public ResponseEntity<Usuario> salvar(@RequestBody Usuario usuario) {
 
-      Usuario user =  usuarioRepository.save(usuario);
+        Usuario user =  usuarioRepository.save(usuario);
 
-      return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
+        return  new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
     }
 
     @PutMapping(value = "atualizar")
@@ -86,4 +86,12 @@ public class GreetingsController {
         return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
     }
 
+    @GetMapping(value = "buscarPorNome")
+    @ResponseBody
+    public ResponseEntity<List<Usuario>> buscarPorNome(@RequestParam(name = "name") String name) {
+
+        List<Usuario> usuario = usuarioRepository.buscarPorNome(name);
+
+        return new ResponseEntity<List<Usuario>>(usuario, HttpStatus.OK);
+    }
 }
