@@ -1,6 +1,7 @@
 # Projeto CRUD Full Stack em Java com Spring REST + Bootstrap
 
-Este é um projeto que demonstra a criação de uma API REST CRUD (Create, Read, Update, Delete) em Java usando o framework Spring, juntamente com um front-end construído com Bootstrap. Essa aplicação permite gerenciar uma coleção de itens, como produtos, clientes, tarefas, etc., realizando operações básicas de CRUD.
+Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
+
 
 ## Pré-requisitos
 
