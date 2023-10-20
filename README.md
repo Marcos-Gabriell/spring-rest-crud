@@ -6,7 +6,7 @@
     <img align="center" alt="hibernate" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white">
      <img align="center" alt="postgresql" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
     <img align="center" alt="eclipse" src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white">
-</div>
+</div><br><br>
 
 Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
 
