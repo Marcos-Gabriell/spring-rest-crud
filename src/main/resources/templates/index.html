@@ -34,7 +34,24 @@
             var id = $("#id").val();
             var nome = $("#nome").val();
             var idade = $("#idade").val();
-            alert(nome);
+
+
+
+			$.ajax({
+				method : "GET",
+				url : "buscaruserid",
+				data : "iduser=" + id,
+				success : function(response) {
+
+					$("#id").val(response.id);
+					$("#nome").val(response.nome);
+					$("#idade").val(response.idade);
+
+					$('#modalPesquisarUser').modal('hide');
+				}
+			}).fail(function(xhr, status, errorThrown) {
+				alert("Erro ao buscar usuario por id: " + xhr.responseText);
+			});
         }
     </script>
 
