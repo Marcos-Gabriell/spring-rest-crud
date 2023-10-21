@@ -43,7 +43,7 @@
            data: JSON.stringify({ id: id, nome: nome, idade: idade }), // Corrigindo a formatação do objeto JSON
            contentType: "application/json; charset=utf-8",
            success: function(response) {
-              alert("Gravou com sucesso");
+            alert("Gravou com sucesso");
           }
         }).fail(function(xhr, status, errorThrown) {
           alert("Erro ao buscar usuário por id: " + xhr.responseText);
