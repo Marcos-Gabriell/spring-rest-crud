@@ -43,6 +43,8 @@
            data: JSON.stringify({ id: id, nome: nome, idade: idade }), // Corrigindo a formatação do objeto JSON
            contentType: "application/json; charset=utf-8",
            success: function(response) {
+
+           $(#id).val(response.id);
             alert("Gravou com sucesso");
           }
         }).fail(function(xhr, status, errorThrown) {
