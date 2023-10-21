@@ -39,19 +39,14 @@
 
         $.ajax({
                   method: "POST",
-                  url: "salvar",
-                  data: JSON.stringify({ id: id, nome: nome, idade: idade }),
-    contentType: "application/json; charset=utf-8",
-				data : JSON.stringify({
-					id : id,
-					nome : nome,
-					idade : idade
-				}),
-				contentType : "application/json; charset=utf-8",
-				success : function(response) {
+                  url: "/salvar",
+                  data: JSON.stringify({id : id, nome : nome, idade: idade}),
+                  contentType: "application/json; charset=utf-8",
+				  success: function(response) {
 					$("#id").val(response.id);
-					alert("Gravou com sucesso!");
-				}
+
+                    alert("Gravou com sucesso");
+                 }
 			}).fail(function(xhr, status, errorThrown) {
 				alert("Erro ao salvar usuario: " + xhr.responseText);
 			});
