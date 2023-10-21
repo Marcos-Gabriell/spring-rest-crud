@@ -37,21 +37,19 @@
 
 
 
-			$.ajax({
-				method : "GET",
-				url : "buscaruserid",
-				data : "iduser=" + id,
-				success : function(response) {
+        $.ajax({
+           method: "POST",
+           url: "salvar",
+           data: JSON.stringify({ id: id, nome: nome, idade: idade }), // Corrigindo a formatação do objeto JSON
+           contentType: "application/json; charset=utf-8",
+           success: function(response) {
+              alert("Gravou com sucesso");
+          }
+        }).fail(function(xhr, status, errorThrown) {
+          alert("Erro ao buscar usuário por id: " + xhr.responseText);
+        });
 
-					$("#id").val(response.id);
-					$("#nome").val(response.nome);
-					$("#idade").val(response.idade);
 
-					$('#modalPesquisarUser').modal('hide');
-				}
-			}).fail(function(xhr, status, errorThrown) {
-				alert("Erro ao buscar usuario por id: " + xhr.responseText);
-			});
         }
     </script>
 
