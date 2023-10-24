@@ -81,13 +81,10 @@
                   }),
                   contentType: "application/json; charset=utf-8",
 				  success: function(response) {
-					$("#id").val(response.id);
 
-                    $("#id").val(response.id);
-                    alert("Gravou com sucesso");
                  }
 			}).fail(function(xhr, status, errorThrown) {
-				alert("Erro ao salvar usuario: " + xhr.responseText);
+				alert("Erro ao buscar usuario: " + xhr.responseText);
 			});
 
         }
