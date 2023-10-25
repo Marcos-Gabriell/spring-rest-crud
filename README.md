@@ -1,4 +1,5 @@
 # Projeto CRUD Full Stack em Java com Spring REST + Bootstrap
+Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
 
 Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir registros de uma coleção de dados. Um CRUD é uma funcionalidade comum em muitos aplicativos, onde os usuários podem interagir com dados por meio das seguintes operações:
 
@@ -9,6 +10,16 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
   
 Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
 
+## Funcionalidades Principais
+
+- **Listagem de Registros**: Exiba uma lista de todos os registros na coleção de dados, mostrando informações relevantes.
+
+- **Adicionar Novos Registros**: Forneça um formulário onde os usuários possam inserir informações para criar um novo registro.
+
+- **Visualização Detalhada**: Ao clicar em um registro, exiba uma visualização detalhada com todas as informações disponíveis.
+
+- **Atualização de Registros**: Permita aos usuários editar informações de registros existentes.
+- 
 ## Linguagens e ferramentas  usadas
 <div >
      <img align="center" alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
