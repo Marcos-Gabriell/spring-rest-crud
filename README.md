@@ -15,7 +15,7 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
 
 - **Adicionar Novos usuários**: Forneça um formulário onde os usuários possam inserir informações para criar um novo registro.
 
-- **Excluir Usuários **: Permita excluir usuários.
+- **Excluir Usuários**: Permita excluir usuários.
 
   
 ## Linguagens e ferramentas  usadas
