@@ -67,44 +67,7 @@
     <script type="text/javascript">
 
 
-        function pesquisarUser() {
-             var nome = $('#nameBusca').val();
 
-             if (nome != null && nome.trim() != '') {
-
-                 $
-                         .ajax(
-                                 {
-                                     method : "GET",
-                                     url : "buscarPorNome",
-                                     data : "name=" + nome,
-                                     success : function(response) {
-                                         $('#tabelaresultados > tbody > tr')
-                                                 .remove();
-
-                                         for (var i = 0; i < response.length; i++) {
-                                             $('#tabelaresultados > tbody')
-                                                     .append(
-                                                             '<tr id="'+response[i].id+'"><td>'
-                                                                     + response[i].id
-                                                                     + '</td><td>'
-                                                                     + response[i].nome
-                                                                     + '</td><td><button type="button" onclick="colocarEmEdicao('
-                                                                     + response[i].id
-                                                                     + ')" class="btn btn-primary">Ver</button></td><td><button type="button" class="btn btn-danger" onclick="deleteUser('
-                                                                     + response[i].id
-                                                                     + ')">Delete</button></td></tr>');
-                                         }
-
-                                     }
-                                 }).fail(
-                                 function(xhr, status, errorThrown) {
-                                     alert("Erro ao buscar usuario: "
-                                             + xhr.responseText);
-                                 });
-
-             }
-         }
 
          function salvarUsuario() {
              var id = $("#id").val();
