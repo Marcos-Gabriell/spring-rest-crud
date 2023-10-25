@@ -18,7 +18,8 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
 - **Visualização Detalhada**: Ao clicar em um registro, exiba uma visualização detalhada com todas as informações disponíveis.
 
 - **Atualização de Registros**: Permita aos usuários editar informações de registros existentes.
-- 
+
+  
 ## Linguagens e ferramentas  usadas
 <div >
      <img align="center" alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
