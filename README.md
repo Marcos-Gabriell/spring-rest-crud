@@ -13,11 +13,9 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
 
 - **Listagem de Usuários e Pesquisa por Nome**: Permita aos usuários pesquisar usuários pelo nome, facilitando a localização de registros específicos.
 
-- **Adicionar Novos Registros**: Forneça um formulário onde os usuários possam inserir informações para criar um novo registro.
+- **Adicionar Novos usuários**: Forneça um formulário onde os usuários possam inserir informações para criar um novo registro.
 
-- **Visualização Detalhada**: Ao clicar em um registro, exiba uma visualização detalhada com todas as informações disponíveis.
-
-- **Atualização de Registros**: Permita aos usuários editar informações de registros existentes.
+- **Excluir Usuários **: Permita excluir usuários.
 
   
 ## Linguagens e ferramentas  usadas
