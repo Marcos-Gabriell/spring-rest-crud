@@ -67,54 +67,70 @@
     <script type="text/javascript">
 
 
-        fuction pesquisarUser() {
-           var nome = $("#nameBusca").val();
+        function pesquisarUser() {
+             var nome = $('#nameBusca').val();
 
-           if(nome != null && nome.trim() != '') {
-                  $.ajax({
-                  method: "GET",
-                  url: "buscarPorNome",
-                  data: "name=" + nome ,
+             if (nome != null && nome.trim() != '') {
 
-				  success: function(response) {
-				    $('#tabelaresultados > tbody >  tr').remove();
+                 $
+                         .ajax(
+                                 {
+                                     method : "GET",
+                                     url : "buscarPorNome",
+                                     data : "name=" + nome,
+                                     success : function(response) {
+                                         $('#tabelaresultados > tbody > tr')
+                                                 .remove();
 
-				    for(var i = 0; i < response.leng
+                                         for (var i = 0; i < response.length; i++) {
+                                             $('#tabelaresultados > tbody')
+                                                     .append(
+                                                             '<tr id="'+response[i].id+'"><td>'
+                                                                     + response[i].id
+                                                                     + '</td><td>'
+                                                                     + response[i].nome
+                                                                     + '</td><td><button type="button" onclick="colocarEmEdicao('
+                                                                     + response[i].id
+                                                                     + ')" class="btn btn-primary">Ver</button></td><td><button type="button" class="btn btn-danger" onclick="deleteUser('
+                                                                     + response[i].id
+                                                                     + ')">Delete</button></td></tr>');
+                                         }
 
-                 }
-			}).fail(function(xhr, status, errorThrown) {
-				alert("Erro ao buscar usuario: " + xhr.responseText);
-			});
+                                     }
+                                 }).fail(
+                                 function(xhr, status, errorThrown) {
+                                     alert("Erro ao buscar usuario: "
+                                             + xhr.responseText);
+                                 });
 
-        }
-           }
-        }
+             }
+         }
 
-        function salvarUsuario() {
-            var id = $("#id").val();
-            var nome = $("#nome").val();
-            var idade = $("#idade").val();
+         function salvarUsuario() {
+             var id = $("#id").val();
+             var nome = $("#nome").val();
+             var idade = $("#idade").val();
 
-        $.ajax({
-                  method: "POST",
-                  url: "salvar",
-                  data: JSON.stringify({
-                        id : id,
-                        nome : nome,
-                        idade: idade
-                    }),
-                  contentType: "application/json; charset=utf-8",
-				  success: function(response) {
-					$("#id").val(response.id);
+         $.ajax({
+                   method: "POST",
+                   url: "salvar",
+                   data: JSON.stringify({
+                         id : id,
+                         nome : nome,
+                         idade: idade
+                     }),
+                   contentType: "application/json; charset=utf-8",
+                   success: function(response) {
+                     $("#id").val(response.id);
 
-                    $("#id").val(response.id);
-                    alert("Gravou com sucesso");
-                 }
-			}).fail(function(xhr, status, errorThrown) {
-				alert("Erro ao salvar usuario: " + xhr.responseText);
-			});
+                     $("#id").val(response.id);
+                     alert("Gravou com sucesso");
+                  }
+             }).fail(function(xhr, status, errorThrown) {
+                 alert("Erro ao salvar usuario: " + xhr.responseText);
+             });
 
-        }
+         }
     </script>
 
 </body>
