@@ -2,7 +2,7 @@
 
 Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir registros de uma coleção de dados. Um CRUD é uma funcionalidade comum em muitos aplicativos, onde os usuários podem interagir com dados por meio das seguintes operações:
 
-- **Criar (Create)**: Adicione novos registros à coleção de dados.
+- **Criar (Create)**: Adicione novos usuários à coleção de dados.
 - **Ler (Read)**: Visualize registros existentes e suas informações.
 - **Atualizar (Update)**: Modifique informações de registros existentes.
 - **Excluir (Delete)**: Remova registros da coleção de dados.
