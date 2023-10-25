@@ -11,7 +11,7 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
 
 ## Funcionalidades Principais
 
-- **Listagem de Registros**: Exiba uma lista de todos os registros na coleção de dados, mostrando informações relevantes.
+- **Listagem de Usuários e Pesquisa por Nome**: Exiba uma lista de todos os usuários na coleção de dados, mostrando informações relevantes. Além disso, permita aos usuários pesquisar usuários pelo nome, facilitando a localização de registros específicos.
 
 - **Adicionar Novos Registros**: Forneça um formulário onde os usuários possam inserir informações para criar um novo registro.
 
