@@ -1,5 +1,5 @@
 # Projeto CRUD Full Stack em Java com Spring REST + Bootstrap
-
+Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir registros de uma coleção de dados. Um CRUD é uma funcionalidade comum em muitos aplicativos, onde os usuários podem interagir com dados por meio das seguintes operações:
 ![Portfólio](https://github.com/Marcos-Gabriell/spring-rest-crud/blob/master/Desktop%20Screenshot%202023.10.26%20-%2013.41.47.57.png)
 
 Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
