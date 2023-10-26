@@ -54,6 +54,7 @@ Antes de começar, certifique-se de que você tenha as seguintes ferramentas e c
     - [Visual Studio Code](https://code.visualstudio.com/download): Um editor de código leve e altamente personalizável, com extensões para Java.
 
 Certifique-se de ter uma das IDEs acima instalada para facilitar o desenvolvimento e a execução do projeto.
+## Apresentação do projeto:
 
 ## Configuração
 
