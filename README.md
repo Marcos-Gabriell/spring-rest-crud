@@ -12,12 +12,6 @@ Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir r
 
 Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e PostgreSQL para gerenciar informações de pessoas, incluindo ID, nome e idade. O front-end utiliza Bootstrap e interage com o back-end por meio de requisições AJAX e jQuery. O aplicativo permite adicionar novas pessoas e exibir uma lista das pessoas cadastradas, com suas informações de identificação, como ID, nome e idade.
 
-Este é um aplicativo CRUD simples que permite criar, ler, atualizar e excluir registros de uma coleção de dados. Um CRUD é uma funcionalidade comum em muitos aplicativos, onde os usuários podem interagir com dados por meio das seguintes operações:
-
-- **Criar (Create)**: Adicione novos usuários à coleção de dados.
-- **Ler (Read)**: Visualize usuários existentes e suas informações.
-- **Atualizar (Update)**: Modifique informações de usuários existentes.
-- **Excluir (Delete)**: Remova usuários da coleção de dados.
   
 
 ## Funcionalidades Principais
