@@ -32,8 +32,6 @@ Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e P
 
 - **Excluir Usuários**: Permita excluir usuários.
 
-  
-
 
 ## Pré-requisitos
 
