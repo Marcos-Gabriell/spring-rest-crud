@@ -35,7 +35,6 @@ Este projeto consiste na criação de um aplicativo CRUD com Spring Data JPA e P
   
 
 
-
 ## Pré-requisitos
 
 Antes de começar, certifique-se de que você tenha as seguintes ferramentas e componentes instalados:
