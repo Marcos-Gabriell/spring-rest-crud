@@ -65,5 +65,4 @@ Certifique-se de ter uma das IDEs acima instalada para facilitar o desenvolvimen
 
 4. Execute o projeto a partir da IDE ou use o comando Maven para iniciar o aplicativo.
 
-
 O aplicativo estará disponível em `localhost:8080/spring-rest-crud/`.
